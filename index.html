@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">facebook</div>
+
+        <input type="text" placeholder="Search Facebook..." class="search">
+
+        <div class="nav-actions">
+            <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+            <div class="profile-avatar">A</div>
+        </div>
+    </header>
+
+    <!-- Main Layout -->
+    <main class="layout">
+
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <h3>Menu</h3>
+            <p>👤 Friends</p>
+            <p>👥 Groups</p>
+            <p>🛒 Marketplace</p>
+            <p>📅 Events</p>
+            <p>🕒 Memories</p>
+        </aside>
+
+        <!-- Main Feed -->
+        <section class="feed">
+
+            <!-- Stories -->
+            <div class="stories">
+                <div class="story">➕<br> Create Story</div>
+                <div class="story">👩<br> Sarah</div>
+                <div class="story">👨<br> John</div>
+                <div class="story">👩‍🦰<br> Emily</div>
+            </div>
+
+            <!-- Create Post -->
+            <div class="create-post">
+                <h3>Create Post</h3>
+                <input type="text"
+                       id="postInput"
+                       placeholder="What's on your mind?">
+                <button id="publishPost">Post</button>
+            </div>
+
+            <!-- Posts will be generated using JavaScript -->
+            <div id="postsContainer"></div>
+
+        </section>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <h3>Contacts</h3>
+            <p>🟢 John</p>
+            <p>🟢 Sarah</p>
+            <p>🟢 Alex</p>
+            <p>🟢 Emily</p>
+        </aside>
+
+    </main>
+
+</body>
+</html>
